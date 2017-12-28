@@ -7,13 +7,13 @@ obj/miner.o: miner.cpp txdb.h txdb-leveldb.h main.h bignum.h serialize.h \
  zerocoin/AccumulatorProofOfKnowledge.h zerocoin/CoinSpend.h \
  zerocoin/SerialNumberSignatureOfKnowledge.h zerocoin/SpendMetaData.h \
  zerocoin/../uint256.h zerocoin/ParamGeneration.h \
- /mnt/TheresaMay/src/leveldb/include/leveldb/db.h \
- /mnt/TheresaMay/src/leveldb/include/leveldb/iterator.h \
- /mnt/TheresaMay/src/leveldb/include/leveldb/slice.h \
- /mnt/TheresaMay/src/leveldb/include/leveldb/status.h \
- /mnt/TheresaMay/src/leveldb/include/leveldb/options.h \
- /mnt/TheresaMay/src/leveldb/include/leveldb/write_batch.h miner.h \
- wallet.h ui_interface.h walletdb.h db.h base58.h kernel.h
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/db.h \
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/iterator.h \
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/slice.h \
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/status.h \
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/options.h \
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/write_batch.h \
+ miner.h wallet.h ui_interface.h walletdb.h db.h base58.h kernel.h
 miner.cpp txdb.h txdb-leveldb.h main.h bignum.h serialize.h :
  allocators.h version.h clientversion.h uint256.h sync.h net.h mruset.h :
  netbase.h compat.h protocol.h addrman.h util.h script.h keystore.h :
@@ -23,10 +23,10 @@ miner.cpp txdb.h txdb-leveldb.h main.h bignum.h serialize.h :
  zerocoin/AccumulatorProofOfKnowledge.h zerocoin/CoinSpend.h :
  zerocoin/SerialNumberSignatureOfKnowledge.h zerocoin/SpendMetaData.h :
  zerocoin/../uint256.h zerocoin/ParamGeneration.h :
- /mnt/TheresaMay/src/leveldb/include/leveldb/db.h :
- /mnt/TheresaMay/src/leveldb/include/leveldb/iterator.h :
- /mnt/TheresaMay/src/leveldb/include/leveldb/slice.h :
- /mnt/TheresaMay/src/leveldb/include/leveldb/status.h :
- /mnt/TheresaMay/src/leveldb/include/leveldb/options.h :
- /mnt/TheresaMay/src/leveldb/include/leveldb/write_batch.h miner.h :
- wallet.h ui_interface.h walletdb.h db.h base58.h kernel.h :
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/db.h :
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/iterator.h :
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/slice.h :
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/status.h :
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/options.h :
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/leveldb/include/leveldb/write_batch.h :
+ miner.h wallet.h ui_interface.h walletdb.h db.h base58.h kernel.h :

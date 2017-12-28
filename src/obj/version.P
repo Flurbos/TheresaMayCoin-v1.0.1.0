@@ -1,4 +1,4 @@
 obj/version.o: version.cpp version.h clientversion.h \
- /mnt/TheresaMay/src/obj/build.h
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/obj/build.h
 version.cpp version.h clientversion.h :
- /mnt/TheresaMay/src/obj/build.h :
+ /home/choicesz/TheresaMayCoin-v1.0.1.0/src/obj/build.h :

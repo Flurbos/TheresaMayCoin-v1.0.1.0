@@ -1081,7 +1081,7 @@ void ThreadSocketHandler2(void* parg)
 void ThreadMapPort(void* parg)
 {
     // Make this thread recognisable as the UPnP thread
-    RenameThread("TheresaMay-UPnP");
+    RenameThread("Flurbo-UPnP");
 
     try
     {
@@ -1112,10 +1112,14 @@ void ThreadMapPort2(void* parg)
 #ifndef UPNPDISCOVER_SUCCESS
     /* miniupnpc 1.5 */
     devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0);
-#else
+#elif MINIUPNPC_API_VERSION < 14
     /* miniupnpc 1.6 */
     int error = 0;
     devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, &error);
+#else
+    /* miniupnpc 1.9.20150730 */
+   int error = 0;
+   devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, 2, &error);
 #endif
 
     struct UPNPUrls urls;
@@ -1142,7 +1146,7 @@ void ThreadMapPort2(void* parg)
             }
         }
 
-        string strDesc = "TheresaMay " + FormatFullVersion();
+        string strDesc = "Flurbo " + FormatFullVersion();
 #ifndef UPNPDISCOVER_SUCCESS
         /* miniupnpc 1.5 */
         r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
@@ -1233,13 +1237,13 @@ void MapPort()
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
 //    {"95.85.25.162", "95.85.25.162"},
-    {"maypool.uk","86.53.121.36"},
+    {"flurbo.xyz","dnsseed.flurbo.xyz"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
 {
     // Make this thread recognisable as the DNS seeding thread
-    RenameThread("TheresaMay-dnsseed");
+    RenameThread("Flurbo-dnsseed");
 
     try
     {
