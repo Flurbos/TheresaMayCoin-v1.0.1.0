@@ -37,9 +37,9 @@ static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
 static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
 static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 static const unsigned int MAX_INV_SZ = 5000000000;
-static const int64_t MIN_TX_FEE =  100000;
+static const int64_t MIN_TX_FEE =  10000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
-static const int64_t MAX_MONEY = 100000000 * COIN;
+static const int64_t MAX_MONEY = 21000000 * COIN;
 static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% after block 216901
 
 static const int MODIFIER_INTERVAL_SWITCH = 1;
@@ -54,8 +54,8 @@ static const int fHaveUPnP = true;
 #else
 static const int fHaveUPnP = false;
 #endif
-static const uint256 hashGenesisBlock("00000056b82939ea6dbaa22632c4ff5324f2b2c574286af11a380bdb40eda62d");
-static const uint256 hashGenesisBlockTestNet("00000056b82939ea6dbaa22632c4ff5324f2b2c574286af11a380bdb40eda62d");
+static const uint256 hashGenesisBlock("00000000a7978cb4845455e14ab03555af5dd0f9d2066476430a240a240bc4c9");
+static const uint256 hashGenesisBlockTestNet("00000258baee7750addb491fa64387402da664e234ff77e7b8e3897aed4700cc");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 5 * 60; } // up to 5 minutes from the past   - down from 10 for security
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 5 * 60; } // up to 5 minutes from the future
